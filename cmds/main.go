@@ -4,11 +4,12 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/ElijahB09/personal-website/views/home"
 	"github.com/a-h/templ"
 )
 
 func main() {
-	component := hello("John")
+	component := home.Hello("John")
 
 	http.Handle("/", templ.Handler(component))
 
