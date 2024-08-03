@@ -1,2 +1,3 @@
 # personal-website
-A website for myself... My resume, maybe a blog
+
+A website/blog for myself. I like Go so I'm gonna write this in HTMX + Go using templ
