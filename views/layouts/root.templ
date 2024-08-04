@@ -1,5 +1,7 @@
 package layouts
 
+import "github.com/ElijahB09/personal-website/components"
+
 css body() {
     background-color: #cfcfcf;
 }
@@ -15,6 +17,7 @@ templ Root() {
             <link rel="stylesheet" href="/styles/templ.css">
         </head>
         <body class={ body }>
+            @components.Nav()
             { children... }
         </body>
     </html>

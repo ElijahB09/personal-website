@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	component := home.HomePage()
+	component := home.Home()
 
 	http.Handle("/", templ.Handler(component))
 
