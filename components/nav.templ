@@ -1,21 +1,33 @@
 package components
 
-templ Nav() {
-    <section>
-        <nav>
-            <ul>
-                <li>
-                    Home
-                </li>
-                <li>
-                    Blog
-                </li>
-                <li>
-                    Projects
-                </li>
-                <li>
-                    About
-                </li>
+css section() {
+    width: 100%;
+    background-color: #a00000;
+}
+
+css nav_container() {
+    padding: 16px;
+}
+
+css nav_items() {
+    display: flex;
+    list-style: none;
+}
+
+css nav_item() {
+    text-decoration: none;
+    color: #cfcfcf;
+    margin: 0 8px;
+    font-size: 24px;
+}
+
+templ Nav(items []string) {
+    <section class={ section }>
+        <nav class={ nav_container }>
+            <ul class={ nav_items }>
+            for _, item := range items {
+                <li class={ nav_item }>{ item }</li>
+            }
             </ul>
         </nav>
     </section>

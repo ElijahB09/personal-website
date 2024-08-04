@@ -9,7 +9,9 @@ import (
 )
 
 func main() {
-	component := home.Home()
+	nav_items := []string{"Home", "Blog", "Project", "About"}
+
+	component := home.Home(nav_items)
 
 	http.Handle("/", templ.Handler(component))
 

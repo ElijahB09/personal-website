@@ -4,9 +4,10 @@ import "github.com/ElijahB09/personal-website/components"
 
 css body() {
     background-color: #cfcfcf;
+    margin: 0;
 }
 
-templ Root() {
+templ Root(nav_items []string) {
     <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -17,7 +18,7 @@ templ Root() {
             <link rel="stylesheet" href="/styles/templ.css">
         </head>
         <body class={ body }>
-            @components.Nav()
+            @components.Nav(nav_items)
             { children... }
         </body>
     </html>

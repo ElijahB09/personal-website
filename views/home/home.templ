@@ -15,8 +15,8 @@ css container() {
 	padding: 20px;
 }
 
-templ Home() {
-	@layouts.Root() {
+templ Home(nav_items []string) {
+	@layouts.Root(nav_items) {
 		<section class={ section }>
 			<div class={ container }>
 				<h1>Home</h1>
