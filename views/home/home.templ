@@ -4,23 +4,17 @@ import "github.com/ElijahB09/personal-website/views/layouts"
 
 css section() {
 	width: 100%;
-	padding: 60px 0;
+	padding: 40px 0;
 	display: flex;
 	justify-content: center;
-}
-
-css container() {
-	width: 85%;
 	background-color: #afafaf;
-	padding: 20px;
+	border-bottom: 1px solid #000000;
 }
 
 templ Home(nav_items []string) {
 	@layouts.Root(nav_items) {
 		<section class={ section }>
-			<div class={ container }>
-				<h1>Home</h1>
-			</div>
+			
 		</section>
 	}
 }
