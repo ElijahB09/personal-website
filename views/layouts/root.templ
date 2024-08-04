@@ -1,5 +1,9 @@
 package layouts
 
+css body() {
+    background-color: #cfcfcf;
+}
+
 templ Root() {
     <!DOCTYPE html>
     <html lang="en">
@@ -8,8 +12,9 @@ templ Root() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <title>Elijah Brady's Site</title>
+            <link rel="stylesheet" href="/styles/templ.css">
         </head>
-        <body style="background-color: #cfcfcf;">
+        <body class={ body }>
             { children... }
         </body>
     </html>
