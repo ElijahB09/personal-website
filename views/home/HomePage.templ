@@ -1,0 +1,26 @@
+package home
+
+import "github.com/ElijahB09/personal-website/views/layouts"
+
+css section() {
+	width: 100%;
+	padding: 60px 0;
+	display: flex;
+	justify-content: center;
+}
+
+css container() {
+	width: 85%;
+	background-color: #afafaf;
+	padding: 20px;
+}
+
+templ HomePage() {
+	@layouts.Root() {
+		<section class={ section }>
+			<div class={ container }>
+				<h1>Home</h1>
+			</div>
+		</section>
+	}
+}
